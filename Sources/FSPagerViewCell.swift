@@ -68,7 +68,7 @@ open class FSPagerViewCell: UICollectionViewCell {
         set {
             super.isHighlighted = newValue
             if newValue {
-                self.selectedForegroundView?.layer.backgroundColor = self.selectionColor.cgColor
+                self.selectedForegroundView?.layer.backgroundColor = UIColor.clear.cgColor
             } else if !super.isSelected {
                 self.selectedForegroundView?.layer.backgroundColor = UIColor.clear.cgColor
             }
